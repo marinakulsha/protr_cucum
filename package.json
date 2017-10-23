@@ -1,0 +1,25 @@
+{
+  "name": "protractor_cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "node_modules\\.bin\\webdriver-manager update",
+    "start": "node_modules\\.bin\\webdriver-manager start",
+    "go": "node_modules\\.bin\\protractor test/conf_protractor.js"
+  },
+  "author": "Marina",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^2.33.1",
+    "cucumber": "^3.0.5",
+    "protractor": "^5.2.0",
+    "protractor-cucumber-framework": "^4.0.9",
+    "chai-smoothie": "^0.3.2"
+  },
+  "devDependencies": {
+    "chai-smoothie": "^0.3.2"
+  }
+}

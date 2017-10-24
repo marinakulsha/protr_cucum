@@ -32,7 +32,7 @@ Page.prototype.clickButton = function(el, index) {
 };
 
 Page.prototype.inputValue = function(el, index, text) {
-   
+
     let EC = protractor.ExpectedConditions;
     let element;
     return Promise.resolve()
@@ -91,8 +91,9 @@ Page.prototype.elementVisibility = function(el, index, elText) {
     let elem;
     return Promise.resolve()
         .then(() => {
-        console.log(el)
+
             return browser.wait(() => {
+                console.log('ggggggg')
                 return el
 
                     .then((arr) => {

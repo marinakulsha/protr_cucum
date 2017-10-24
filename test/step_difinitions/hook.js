@@ -1,5 +1,6 @@
 let { defineSupportCode } = require('cucumber'); defineSupportCode(function ({ Before, setDefaultTimeout }) {
-    setDefaultTimeout(60000); Before('@logo', function () {
+    setDefaultTimeout(60000);
+    Before('@logo', function () {
         let EC = protractor.ExpectedConditions;
         let login = element.all(by.xpath('.//body/descendant::a[@href="/login"]'));
         let registered_customer = element.all(by.xpath('./html/body/div[3]/div[2]/div[1]/div/div[2]/div/h1'));

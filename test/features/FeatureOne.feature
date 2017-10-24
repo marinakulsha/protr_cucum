@@ -23,5 +23,7 @@ Feature: As a login User I should see elements and put the product into the cart
    Then I should see 'cart' element on page
    When I click 'cart' element
    Then I should see 'cart_item' element on page
+   When I click 'delete' element
+   Then I should see '$0.00' element on page
 
 

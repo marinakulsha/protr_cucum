@@ -1,6 +1,6 @@
-var inheritance = {
+let inheritance = {
     inherits: function(Parent,Child){
-        var F = function(){};
+        let F = function(){};
         F.prototype = Parent.prototype;
         Child.prototype = new F();
         Child.prototype.constructor = Child;

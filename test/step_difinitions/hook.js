@@ -37,7 +37,7 @@ let { defineSupportCode } = require('cucumber'); defineSupportCode(function ({ B
                             }
                             return arr.length > 0;
                         })
-                }, 5000)
+                }, 15000)
             })
             .then(() => {
                 return registered_customer.isDisplayed()

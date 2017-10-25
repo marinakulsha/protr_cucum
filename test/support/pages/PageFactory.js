@@ -28,5 +28,13 @@ let PageFactory = function () {
     };
 };
 
-module.exports = PageFactory;
+let mySingleton = {
+    getInstance: function () {
+        if ( !mySingleton.instance )
+            mySingleton.instance = new PageFactory();
+        return mySingleton.instance
+    }
+
+}
+module.exports = mySingleton;
 

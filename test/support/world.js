@@ -2,7 +2,7 @@
 let PageFactory = require('./pages/PageFactory');
 
     function World() {
-    this.PageFactory = new PageFactory(this);
+    this.factory = new PageFactory(this);
     }
 
 module.exports = function() {

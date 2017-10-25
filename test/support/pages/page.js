@@ -2,15 +2,16 @@ let Page = function(){};
 
 Page.prototype._root = element(by.css('body'));
 
-
-Page.prototype.clickButton = function(el, index) {
-
+Page.prototype.data = {};
+Page.prototype.clickButton = function(name) {
+    let elArray = this.data[name].selector;
+    let index = this.data[name].index;
     let EC = protractor.ExpectedConditions;
     let elem;
     return Promise.resolve()
         .then(() => {
             return browser.wait(() => {
-                return el
+                return elArray
                     .then((arr) => {
                         if (arr.length > 0) {
                             elem = arr[index]
@@ -31,17 +32,18 @@ Page.prototype.clickButton = function(el, index) {
 
 };
 
-Page.prototype.inputValue = function(el, index, text) {
-
+Page.prototype.inputValue = function(name, text) {
+    let elArray = this.data[name].selector;
+    let index= this.data[name].index;
     let EC = protractor.ExpectedConditions;
-    let element;
+    let elem;
     return Promise.resolve()
         .then(() => {
            return browser.wait(() => {
-               return el
+               return elArray
                     .then((arr) => {
                       if (arr.length > 0) {
-                            element = arr[index]
+                            elem = arr[index]
                         }
                         return arr.length > 0;
                     })
@@ -49,24 +51,26 @@ Page.prototype.inputValue = function(el, index, text) {
         })
         .then(() => {
            browser.wait(function () {
-                return element.isDisplayed();
+                return elem.isDisplayed();
             }, 20000);
         })
         .then(() => {
-            return element.clear()
+            return elem.clear()
         })
        .then(() => {
-            return element.sendKeys(text)
+            return elem.sendKeys(text)
         });
 };
 
-Page.prototype.pressButton = function(el, index, button) {
+Page.prototype.pressButton = function(name) {
+    let elArray = this.data[name].selector;
+    let index= this.data[name].index;
     let EC = protractor.ExpectedConditions;
     let elem;
     return Promise.resolve()
         .then(() => {
             return browser.wait(() => {
-                return el
+                return elArray
                     .then((arr) => {
                         if (arr.length > 0) {
                             elem = arr[index]
@@ -83,20 +87,20 @@ Page.prototype.pressButton = function(el, index, button) {
         })
 
         .then(() => {
-            return elem.sendKeys(protractor.Key[button])
+            return elem.sendKeys(protractor.Key[name])
         })
 
 };
-Page.prototype.elementVisibility = function(el, index, elText) {
+Page.prototype.elementVisibility = function(name) {
+    let elArray = this.data[name].selector;
+    let index= this.data[name].index;
+    let elText = this.data[name].elText;
     let elem;
     return Promise.resolve()
         .then(() => {
-
             return browser.wait(() => {
-                console.log('ggggggg')
-                return el
-
-                    .then((arr) => {
+                return elArray
+                   .then((arr) => {
                         if (arr.length > 0) {
                             elem = arr[index]
                         }
@@ -113,13 +117,24 @@ Page.prototype.elementVisibility = function(el, index, elText) {
             if (elText) {
                 return elem.getText();
             }
+        }).then((text) =>{
+            return {
+                actualText: text,
+                expectedText: elText
+            };
         })
-        .then((text) => {
-            if (text) {
-                expect(text).to.equal(elText);
-            }
-        });
+       /* .catch((err) => {
+            console.log(err);
+            return browser.sleep(100)
+                .then(() => {
+                    return {
+                        actualText: elem.getText(),
+                        expectedText: elText
+                    };
+                })
+        })*/
 
-}
+ }
+
 
 module.exports = Page;

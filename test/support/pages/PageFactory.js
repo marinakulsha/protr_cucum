@@ -36,5 +36,5 @@ let mySingleton = {
     }
 
 }
-module.exports = mySingleton;
+module.exports = mySingleton.getInstance();
 

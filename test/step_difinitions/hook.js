@@ -8,7 +8,8 @@ let { defineSupportCode } = require('cucumber'); defineSupportCode(function ({ B
         let password = element.all(by.id("Password"));
         let rememberMe = element.all(by.css("label[for=rememberMe]"));
         let submit = element.all(by.xpath('./html/body/div[3]/div[2]/div[1]/div/div[2]/div/div[2]/form/div[5]/button'));
-        let logout = element.all(by.xpath('.//body/descendant::a[@href="/logout"]')); return Promise.resolve()
+        let logout = element.all(by.xpath('.//body/descendant::a[@href="/logout"]'));
+            return Promise.resolve()
             .then(() => {
                 return browser.get('http://foodbank.d5.aisnovations.com/');
             })

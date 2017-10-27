@@ -4,7 +4,15 @@ let Page = function () {
 Page.prototype._root = element(by.css('body'));
 
 Page.prototype.data = {};
+Page.prototype.url = '';
 
+Page.prototype.goToPage = function(){
+    return Promise.resolve()
+        .then(() => {
+            return browser.get(this.url)
+        })
+
+}
 
 Page.prototype.waitReady = function (name) {
     let elArray = this.data[name].selector;

@@ -3,6 +3,7 @@ Feature: As a login User I should see elements and put the product into the cart
 
   @logo
   Scenario: Go to site and see logo element on page
+   When I go to 'home' page
    Then I should see 'logo' element on page
 
   @link

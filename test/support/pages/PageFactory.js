@@ -7,7 +7,6 @@ let Home = require('./Home'),
 let PageFactory = function () {
 
     let _this = this;
-
     _this.currentPage = null;
 
     _this.getPage = function (page) {
@@ -18,7 +17,6 @@ let PageFactory = function () {
             'checkout': Checkout,
             'blog': Blog,
             'myaccount': MyAccount
-
         };
         if (!pages[page]) {
             throw new Error('Wrong page name: ' + page);

@@ -3,6 +3,7 @@ let Page = require('./page');
 let Home = function () {
 };
 inheritance.inherits(Page, Home);
+Home.prototype.url = 'http://foodbank.d5.aisnovations.com/'
 
 Home.prototype.data = {
     'Aceon': {
@@ -17,10 +18,7 @@ Home.prototype.data = {
         selector: element.all(by.css('button.btn:nth-child(2)')),
         index: 0
     },
-   /*/!* 'cart': {
-        selector: element.all(by.xpath('.//body/descendant::a[@href="/cart"]')),
-        index: 1*!/
-    },*/
+
     'delete': {
         selector: element.all(by.xpath('.//*[@id="cart-item-1131"]/td[5]/a')),
         index: 0
@@ -46,10 +44,7 @@ Home.prototype.data = {
         elText: 'Products: Aceon',
         index: 0
     },
-   /* 'product': {
-        selector: element.all(by.xpath('.//body/descendant::a[@href="/product?id=1131"]')),
-        index: 0
-    },*/
+
     'product_title': {
         selector: element.all(by.xpath('/html/body/div[1]/div/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div/h2')),
         elText: 'amphetamine',

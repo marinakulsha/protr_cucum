@@ -1,4 +1,11 @@
+
+let platforms = {
+    mobile: '--window-size=500,800',
+    desktop:'--window-size=1280,800'
+};
+
 exports.config = {
+
     seleniumAddress: 'http://localhost:4444/wd/hub',
 
     specs: ['features/*.feature'],

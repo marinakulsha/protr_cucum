@@ -39,6 +39,7 @@ Home.prototype.data = {
     },
     'Aceon': {
         selector: element.all(by.xpath('.//body/descendant::a[@href="/products?category=Aceon"]')),
+        elText:'Products: Aceon',
         index: 1
     },
     'product': {

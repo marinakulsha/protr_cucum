@@ -20,7 +20,8 @@
     "grunt-protractor-runner": "^5.0.0",
     "grunt-protractor-webdriver": "^0.2.5",
     "protractor": "^5.2.0",
-    "protractor-cucumber-framework": "^4.0.9"
+    "protractor-cucumber-framework": "^4.0.9",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "chai-smoothie": "^0.3.2"

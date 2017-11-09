@@ -6,6 +6,37 @@ inheritance.inherits(Page, Home);
 Home.prototype.url = 'http://foodbank.d5.aisnovations.com/'
 
 Home.prototype.data = {
+
+    'login': {
+        selector: element.all(by.xpath('/html/body/header/div[2]/div[4]/div/div[2]/a')),
+        index: 0
+    },
+    'registered_customer': {
+        selector: element.all(by.xpath('/html/body/div[3]/div[2]/div[1]/div/div[2]/div/h1')),
+        elText: 'Registered Customer',
+        index: 0
+    },
+    'email': {
+        selector: element.all(by.id("UserName")),
+        index: 0
+    },
+    'password': {
+        selector: element.all(by.id("Password")),
+        index: 0
+    },
+    'rememberMe': {
+        selector: element.all(by.css("label[for=rememberMe]")),
+        index: 0
+    },
+    'submit': {
+        selector: element.all(by.xpath('./html/body/div[3]/div[2]/div[1]/div/div[2]/div/div[2]/form/div[5]/button')),
+        index: 0
+    },
+    'logout': {
+        selector: element.all(by.xpath('/html/body/header/div[2]/div[4]/div/div[2]/a')),
+        elText: 'Log out',
+        index: 0
+    },
     'Aceon': {
         selector: element.all(by.xpath('.//body/descendant::a[@href="/products?category=Aceon"]')),
         index: 1

@@ -19,7 +19,7 @@ exports.config = {
 
     onPrepare: function(){
         browser.ignoreSynchronization = true;
-        browser.driver.manage().window().maximize();
+       // browser.driver.manage().window().maximize();
         let chai = require('chai');
         chaiAsPromised = require('chai-as-promised');
         expect = chai.expect;

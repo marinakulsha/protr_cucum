@@ -1,7 +1,17 @@
-let { defineSupportCode } = require('cucumber'); defineSupportCode(function ({ Before, setDefaultTimeout }) {
+let { defineSupportCode } = require('cucumber');
+
+defineSupportCode(function ({ Before, setDefaultTimeout }) {
     setDefaultTimeout(60000);
-    Before('@logo', function () {
-        let EC = protractor.ExpectedConditions;
+
+    Before(function(){
+        browser.driver.manage().window().maximize();
+    });
+
+});
+
+
+
+       /* let EC = protractor.ExpectedConditions;
         let login = element.all(by.xpath('.//body/descendant::a[@href="/login"]'));
         let registered_customer = element.all(by.xpath('./html/body/div[3]/div[2]/div[1]/div/div[2]/div/h1'));
         let email = element.all(by.id("UserName"));
@@ -141,3 +151,4 @@ let { defineSupportCode } = require('cucumber'); defineSupportCode(function ({ B
             })
     });
 });
+*/

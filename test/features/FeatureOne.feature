@@ -1,10 +1,18 @@
 @test
 Feature: As a login User I should see elements and put the product into the cart
 
-  @logo
+  @login
   Scenario: Go to site and see logo element on page
-   When I go to 'home' page
-   Then I should see 'logo' element on page
+    When I go to 'home' page
+    Then I should see 'logo' element on page
+    When I click 'login' element
+    Then I should see 'registered_customer' element on page
+    When I input into 'email' field the value 'm.kulsha@aisnovations.com'
+    When I input into 'password' field the value 'marina0708'
+    When I click 'rememberMe' element
+    When I click 'rememberMe' element
+    When I click 'submit' element
+    Then I should see 'logout' element on page
 
   @link
   Scenario: See products of Aceon category

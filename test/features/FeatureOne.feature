@@ -19,7 +19,7 @@ Feature: As a login User I should see elements and put the product into the cart
    Then I should see 'product' element on page
    When I click 'product' element
    Then I should see 'product_title' element on page
-   When I input into 'qty_field' field the value '3'
+   When I input into 'qty_field' field the value '03'
    When I click 'add' element
    Then I should see 'cart' element on page
    When I click 'cart' element

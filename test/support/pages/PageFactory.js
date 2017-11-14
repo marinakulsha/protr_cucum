@@ -3,14 +3,13 @@ let Home = require('./Home'),
     Blog = require('./Blog'),
     MyAccount = require('./MyAccount');
 
-
 let PageFactory = function () {
 
     let _this = this;
     _this.currentPage = null;
 
     _this.getPage = function (page) {
-        page = page.toLowerCase()
+        page = page.toLowerCase();
 
         let pages = {
             'home': Home,
@@ -18,6 +17,7 @@ let PageFactory = function () {
             'blog': Blog,
             'myaccount': MyAccount
         };
+
         if (!pages[page]) {
             throw new Error('Wrong page name: ' + page);
         }
@@ -32,7 +32,7 @@ let mySingleton = {
             mySingleton.instance = new PageFactory();
         return mySingleton.instance
     }
+};
 
-}
 module.exports = mySingleton.getInstance();
 

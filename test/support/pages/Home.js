@@ -3,7 +3,7 @@ let Page = require('./page');
 let Home = function () {
 };
 inheritance.inherits(Page, Home);
-Home.prototype.url = 'http://foodbank.d5.aisnovations.com/'
+Home.prototype.url = 'http://foodbank.d5.aisnovations.com/';
 
 Home.prototype.data = {
 
@@ -98,6 +98,4 @@ Home.prototype.data = {
         index: 0
     }
 };
-
-
 module.exports = Home;

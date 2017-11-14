@@ -20,8 +20,11 @@ exports.config = {
     cucumberOpts : {
         require : [
             'support/world.js',
-            'step_difinitions/*.js'
-        ]
+            'step_difinitions/*.js',
+            'cucumber-reporting.js'
+        ],
+       // format : 'rerun:test/reports/@rerun.txt',
+        formats : ['pretty', "json:test/reports/cucumber.json"],
     },
 
     onPrepare: function(){

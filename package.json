@@ -17,6 +17,7 @@
     "chromedriver": "^2.33.1",
     "cucumber": "^3.0.5",
     "grunt": "^1.0.1",
+    "grunt-protractor-cucumber-html-report": "^0.2.8",
     "grunt-protractor-runner": "^5.0.0",
     "grunt-protractor-webdriver": "^0.2.5",
     "protractor": "^5.2.0",

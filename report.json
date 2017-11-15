@@ -1,0 +1,373 @@
+[
+  {
+    "description": "Go to site and see logo element on page",
+    "assertions": [
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      }
+    ],
+    "events": [
+      {
+        "emitterEvent": "testPass",
+        "name": "When I go to 'home' page",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 2,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 6,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then I should see 'logo' element on page",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 13841,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 7,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I click 'login' element",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 2233,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 8,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then I should see 'registered_customer' element on page",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 4418,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 9,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I input into 'email' field the value 'm.kulsha@aisnovations.com'",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 2764,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 10,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I input into 'password' field the value 'marina0708'",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 3568,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 11,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I click 'rememberMe' element",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 3437,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 12,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I click 'rememberMe' element",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 2886,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 13,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I click 'submit' element",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 2745,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 14,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then I should see 'logout' element on page",
+        "category": "As a login User I should see elements and put the product into the cart: Go to site and see logo element on page",
+        "durationMillis": 2866,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 15,
+          "column": 5
+        }
+      }
+    ],
+    "duration": 42623
+  },
+  {
+    "description": "See products of Aceon category",
+    "assertions": [
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      }
+    ],
+    "events": [
+      {
+        "emitterEvent": "testPass",
+        "name": "When I click 'Aceon' element",
+        "category": "As a login User I should see elements and put the product into the cart: See products of Aceon category",
+        "durationMillis": 2,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 20,
+          "column": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then I should see 'Products: Aceon' element on page",
+        "category": "As a login User I should see elements and put the product into the cart: See products of Aceon category",
+        "durationMillis": 4825,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 21,
+          "column": 5
+        }
+      }
+    ],
+    "duration": 7616
+  },
+  {
+    "description": "Put the product into the cart",
+    "assertions": [
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": false,
+        "errorMsg": "expected '$119,996.94' to equal '$0.00'",
+        "stackTrace": "AssertionError: expected '$119,996.94' to equal '$0.00'\n    at PageFactory.currentPage.elementVisibility.then (D:\\workspace\\prot_cuc\\test\\step_difinitions\\steps.js:31:54)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+      }
+    ],
+    "events": [
+      {
+        "emitterEvent": "testPass",
+        "name": "When I input into 'search_name' field the value 'amphetamine'",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 2,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 25,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I press 'ENTER' button",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 3607,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 26,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then I should see 'product' element on page",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 4715,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 27,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I click 'product' element",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 2213,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 28,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then I should see 'product_title' element on page",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 4224,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 29,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I input into 'qty_field' field the value '03'",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 2796,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 30,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I click 'add' element",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 3408,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 31,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then I should see 'cart' element on page",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 2842,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 32,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I click 'cart' element",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 2771,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 33,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then I should see 'cart_item' element on page",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 7041,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 34,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "When I click 'delete' element",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 2821,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 35,
+          "column": 4
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then I should see '$0.00' element on page",
+        "category": "As a login User I should see elements and put the product into the cart: Put the product into the cart",
+        "durationMillis": 2893,
+        "sourceLocation": {
+          "filePath": "test\\features\\FeatureOne.feature",
+          "line": 36,
+          "column": 4
+        }
+      }
+    ],
+    "duration": 42103
+  }
+]

@@ -22,6 +22,7 @@
     "grunt-protractor-webdriver": "^0.2.5",
     "protractor": "^5.2.0",
     "protractor-cucumber-framework": "^4.0.9",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.2.5",
     "request": "^2.83.0"
   },
   "devDependencies": {

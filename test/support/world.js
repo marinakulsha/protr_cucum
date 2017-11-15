@@ -1,15 +1,12 @@
-/*
-let PageFactory = require('./pages/PageFactory');
-let Helper = require('./helpers/helper');
-FieldFactory = require('./ui_elements/fields/fieldFactory')
+let {defineSupportCode} = require('cucumber');
 
-    function World() {
-    this.factory = new PageFactory(this);
-    this.helper = new Helper(this);
-    this.fieldFactory = new FieldFactory(this);
-    }
+//let Helper = require('./test/support/helper');
+function CustomWorld({attach, parameters}) {
+    this.attach = attach;
+    this.parameters = parameters;
+    // this.helper = helper;
+}
 
-module.exports = function() {
-    this.World = World;
-};
-*/
+defineSupportCode(function ({setWorldConstructor}) {
+    setWorldConstructor(CustomWorld);
+});

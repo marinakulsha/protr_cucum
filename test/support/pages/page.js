@@ -29,10 +29,10 @@ Page.prototype.waitReady = function (name) {
                         }
                         return arr.length > 0;
                     })
-            }, 25000)
+            }, 55000)
         })
         .then(function () {
-            return browser.wait(EC.visibilityOf(elem), 50000);
+            return browser.wait(EC.visibilityOf(elem), 55000);
         })
         .then(() => {
             return elem.isDisplayed();

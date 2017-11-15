@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/font-awesome-4.5.0/css/font-awesome.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/init.js"></script>
+</head>
+<body>
+
+<div class="container">
+<header class="failed">
+    <time class="report-date">15, November 2017 14:27</time>
+    <h1>Test report</h1>
+    <div class="test-summary">
+        <div class="scenarios-summary">3 scenarios (2 passed)</div>
+        <div class="steps-summary">25 steps (24 passed)</div>
+        <div class="elapsed-time">
+            <i class="fa fa-clock-o"></i>
+            0.00s
+        </div>
+    </div>
+</header>
+<div class="row navigation-buttons">
+    <div class="filtering-buttons">
+        <div class="col-md-9 col-sm-8 main-btns">
+            <div class="btn-menu">
+                <button data-state="all" class="btn all-btn active" id="all-btn">All</button>
+                <button data-state="passed" class="btn passed-btn" id="passed-btn">Passed</button>
+                <button data-state="failed" class="btn error-btn" id="error-btn">Error</button>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 additional-btns">
+            <div class="btn-support">
+                <button data-state="steps" title="Display all steps within scenario" class="btn fa fa-list btn-list"
+                        id="display-btn"></button>
+                <button data-state="chart" title="Display chart" class="btn fa fa-pie-chart btn-chart"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="feature-with-scenarios">
+    <div class="row feature-container">
+    <div class="col-md-9 col-sm-8">
+        <div class="feature">
+            <h2><i class="fa fa-magic"></i> Feature:</h2>
+
+            <div class="feature-description">
+                As a login User I should see elements and put the product into the cart
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 feature-statistics">
+        <div class="scenario-label">Scenarios</div>
+        <div class="scenario-amount-passed"> 2/3 <br/><span>passed</span></div>
+        <div class="clear"></div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-amount-passed"> 24/25 <br/><span>passed</span></div>
+    </div>
+</div><div class="scenario-container">
+    <div class="scenario passed">
+    <span class="fa fa-angle-down scenario-arrow"></span></h2>
+   <h2 class="status passed">Scenario: Go to site and see logo element on page</h2>
+    <div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I go to 'home' page
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    Then I should see 'logo' element on page
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I click 'login' element
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    Then I should see 'registered_customer' element on page
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I input into 'email' field the value 'm.kulsha@aisnovations.com'
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I input into 'password' field the value 'marina0708'
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I click 'rememberMe' element
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I click 'rememberMe' element
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I click 'submit' element
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    Then I should see 'logout' element on page
+    
+    
+</div>
+</div>
+</div><div class="scenario-container">
+    <div class="scenario passed">
+    <span class="fa fa-angle-down scenario-arrow"></span></h2>
+   <h2 class="status passed">Scenario: See products of Aceon category</h2>
+    <div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I click 'Aceon' element
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    Then I should see 'Products: Aceon' element on page
+    
+    
+</div>
+</div>
+</div><div class="scenario-container">
+    <div class="scenario failed">
+    <span class="fa fa-angle-down scenario-arrow"></span></h2>
+   <h2 class="status failed">Scenario: Put the product into the cart</h2>
+    <div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I input into 'search_name' field the value 'amphetamine'
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I press 'ENTER' button
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    Then I should see 'product' element on page
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I click 'product' element
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    Then I should see 'product_title' element on page
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I input into 'qty_field' field the value '03'
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I click 'add' element
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    Then I should see 'cart' element on page
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I click 'cart' element
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    Then I should see 'cart_item' element on page
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    When I click 'delete' element
+    
+    
+</div><div class="step failed">
+    <span class="step-duration">0.00s</span>
+    Then I should see '$0.00' element on page
+    
+    
+    <div class="error-container">
+        <span class="command-label">Show error code</span>
+        <div class="arrow fa fa-angle-down"></div>
+        <span class="error-details"></span>
+        <blockquote class="error-message">
+            <pre>
+                <code>
+                    &#65;&#115;&#115;&#101;&#114;&#116;&#105;&#111;&#110;&#69;&#114;&#114;&#111;&#114;&#58;&#32;&#101;&#120;&#112;&#101;&#99;&#116;&#101;&#100;&#32;&#39;&#36;&#49;&#50;&#44;&#52;&#52;&#49;&#46;&#57;&#48;&#39;&#32;&#116;&#111;&#32;&#101;&#113;&#117;&#97;&#108;&#32;&#39;&#36;&#48;&#46;&#48;&#48;&#39;
+&#32;&#32;&#32;&#32;&#97;&#116;&#32;&#80;&#97;&#103;&#101;&#70;&#97;&#99;&#116;&#111;&#114;&#121;&#46;&#99;&#117;&#114;&#114;&#101;&#110;&#116;&#80;&#97;&#103;&#101;&#46;&#101;&#108;&#101;&#109;&#101;&#110;&#116;&#86;&#105;&#115;&#105;&#98;&#105;&#108;&#105;&#116;&#121;&#46;&#116;&#104;&#101;&#110;&#32;&#40;&#68;&#58;&#92;&#119;&#111;&#114;&#107;&#115;&#112;&#97;&#99;&#101;&#92;&#112;&#114;&#111;&#116;&#95;&#99;&#117;&#99;&#92;&#116;&#101;&#115;&#116;&#92;&#115;&#116;&#101;&#112;&#95;&#100;&#105;&#102;&#105;&#110;&#105;&#116;&#105;&#111;&#110;&#115;&#92;&#115;&#116;&#101;&#112;&#115;&#46;&#106;&#115;&#58;&#51;&#49;&#58;&#53;&#52;&#41;
+&#32;&#32;&#32;&#32;&#97;&#116;&#32;&#60;&#97;&#110;&#111;&#110;&#121;&#109;&#111;&#117;&#115;&#62;
+&#32;&#32;&#32;&#32;&#97;&#116;&#32;&#112;&#114;&#111;&#99;&#101;&#115;&#115;&#46;&#95;&#116;&#105;&#99;&#107;&#67;&#97;&#108;&#108;&#98;&#97;&#99;&#107;&#32;&#40;&#105;&#110;&#116;&#101;&#114;&#110;&#97;&#108;&#47;&#112;&#114;&#111;&#99;&#101;&#115;&#115;&#47;&#110;&#101;&#120;&#116;&#95;&#116;&#105;&#99;&#107;&#46;&#106;&#115;&#58;&#49;&#56;&#56;&#58;&#55;&#41;
+                </code>
+            </pre>
+        </blockquote>
+    </div>
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    After
+    
+    
+</div>
+</div>
+</div>
+</div>
+
+    <div class="scenario-chart">
+        <div class="close-chart fa fa-times"></div>
+        <h1 class="chart-title">Scenario statistics</h1>
+        <canvas id="chart" class="chart" width="450" height="450">Your browser doesn't support HTML5 Canvas.</canvas>
+    </div>
+</div>
+ <div class="document-container"></div>
+</body>
+</html>
